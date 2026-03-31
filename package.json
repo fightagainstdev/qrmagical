@@ -2,12 +2,12 @@
   "name": "qrmagic",
   "version": "0.1.0",
   "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "npm install && npx next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
+   "scripts": {
+     "dev": "pnpm next dev",
+     "build": "pnpm install && pnpm next build",
+     "start": "pnpm next start",
+     "lint": "pnpm next lint"
+   },
   "dependencies": {
     "ai": "^5.0.8",
     "exa-js": "^1.8.27",
