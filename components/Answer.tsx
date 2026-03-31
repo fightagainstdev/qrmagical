@@ -4,6 +4,7 @@ import { Toaster, toast } from "react-hot-toast";
 export default function Answer({ answer }: { answer: string }) {
   // Function to strip HTML tags from the answer
   const stripHtml = (html: string) => {
+    if (typeof window === 'undefined') return html; // SSR 保护
     const tmp = document.createElement('div');
     tmp.innerHTML = html;
     return tmp.textContent || tmp.innerText || '';
